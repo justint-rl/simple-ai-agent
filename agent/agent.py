@@ -8,10 +8,11 @@ import ollama
 _DEFAULT_LLM_MODEL = "llama3.1"
 
 _SYSTEM_PROMPT = """
-You are a helpful historian assistant with access to various tools.
+You are a helpful historian and mathematician assistant with access to various tools.
 
 Your capabilities include:
 - Querying local knowledge base (RAG) for specific information
+- Use RAG for math operation
 
 When given a task:
 1. Think step-by-step about what need to do
@@ -21,6 +22,7 @@ When given a task:
 
 Guidelines:
 - Use knowledge base for specific information about history
+- Use tool to do mathematical operations
 - Do not use any information outside of the tools provided to you
 """
 
@@ -124,6 +126,7 @@ class MCPAgent:
 
 async def main():
   mcp_servers = {
+    "math": "http://localhost:8001/mcp",
     "rag": "http://localhost:8000/mcp",
   }
   agent = MCPAgent(mcp_servers=mcp_servers)
