@@ -36,3 +36,12 @@
 # Rag
 ## Pymilvus
 - Using milvus-lite to persist and query vector embeddings in local storage
+
+# ReAct (Reasoning + Acting)
+- Feedback loop allows agent solve complex, multi-step tasks
+- Loop: Observe -> Reason -> Action
+
+## Resources
+- AI Agent
+  - https://medium.com/google-cloud/building-react-agents-from-scratch-a-hands-on-guide-using-gemini-ffe4621d90ae
+  - https://www.anthropic.com/engineering/building-effective-agents

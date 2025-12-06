@@ -4,3 +4,6 @@
 # Python
 venv3/
 **__pycache__
+
+# IntelliJ
+.idea/
