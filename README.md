@@ -41,6 +41,19 @@
 - Feedback loop allows agent solve complex, multi-step tasks
 - Loop: Observe -> Reason -> Action
 
+# Run Agent and MCP
+1. Run LLM model `llama3.1`
+  - `ollama run llama3.1`
+2. Run History MCP Server
+  - `cd mcp`
+  - `python3 server.py`
+3. Run Math MCP Server
+  - `cd examples/fastmcp`
+  - `python3 fastmcp_examples.py`
+4. Run AI Agent
+  - `cd agent`
+  - `python3 agent.py`
+
 ## Resources
 - AI Agent
   - https://medium.com/google-cloud/building-react-agents-from-scratch-a-hands-on-guide-using-gemini-ffe4621d90ae
